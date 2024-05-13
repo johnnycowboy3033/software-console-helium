@@ -1,9 +1,9 @@
 describe('Display Service', function() {
 
-  let display;
+  let displayService;
 
   beforeEach(function() {
-    display = new DisplayService()
+    displayService = new DisplayService()
   })
 
   it('should be true because this checking the setup', function() {
@@ -11,21 +11,38 @@ describe('Display Service', function() {
   })
 
   it('should return true because the Display Service exist', function() {
-    expect(display).toBeDefined()
+    expect(displayService).toBeDefined()
   })
 
   it('should return the index of the element in labelIndex that matches index', function() {
     const labelIndex = [1, 2, 3, 4, 5];
     const index = 3;
-    const result = display.findLabelIndex(labelIndex, index);
+    const result = displayService.findLabelIndex(labelIndex, index);
     expect(result).toEqual(2);
   });
 
   it('should return -1 if labelIndex is an empty array', function(){
     const labelIndex = [];
     const index = 3;
-    const result = display.findLabelIndex(labelIndex, index);
+    const result = displayService.findLabelIndex(labelIndex, index);
     expect(result).toEqual(-1);
+  });
+
+  it('should return true when index is present in labelIndex array', () => {
+
+    const labelIndex = [1, 2, 3];
+    const index = 2;
+    const result = displayService.isLabelIndex(labelIndex, index);
+    expect(result).toBeTrue();
+
+  });
+
+  it('should return false when labelIndex is null', () => {
+    const displayService = new DisplayService();
+    const labelIndex = null;
+    const index = 2;
+    const result = displayService.isLabelIndex(labelIndex, index);
+    expect(result).toBeFalse();
   });
 
 
