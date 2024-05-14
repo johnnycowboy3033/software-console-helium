@@ -8,20 +8,16 @@ class DisplayService {
     return value === index;
   }
 
+  isDefined(value){
+    return !(typeof value === 'undefined' || value === null);
+  }
 
   isLabelIndex(labelIndex, index){
-    if(typeof labelIndex === 'undefined' || labelIndex === null){
-      return false;
-    }
-    return labelIndex.some((value) => this.isIndexEqual(value, index));
-
+      return this.isDefined(labelIndex) && labelIndex.some((value) => this.isIndexEqual(value, index));
   }
 
   findLabelIndex(labelIndex, index) {
-    if(typeof labelIndex === 'undefined' || labelIndex === null){
-      return false;
-    }
-    return labelIndex.findIndex((value) => this.isIndexEqual(value, index));
+      return this.isDefined(labelIndex) && labelIndex.findIndex((value) => this.isIndexEqual(value, index));
   }
 
 }
