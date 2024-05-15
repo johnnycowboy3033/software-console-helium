@@ -23,5 +23,9 @@
     "karma-coverage": "^2.2.0",
     "karma-jasmine": "^4.0.1",
     "puppeteer": "^13.4.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "jquery": "^3.7.1"
   }
 }

@@ -5,76 +5,105 @@
     <title>Display Service</title>
     <link rel="stylesheet" href="../docs.css">
 
+    <link rel="icon" type="image/x-icon" href="../../src/images/space-rocket-ico.ico">
+
+    <!-- Dependencies Frameworks -->
+    <script type= "text/javascript" src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script type= "text/javascript" src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Console Notebook Frameworks -->
+    <link rel="stylesheet" href="../docs.css">
+
 </head>
 <body>
-<h1>Display Service</h1>
 
-<h2>isLabelIndex(labelIndex, index)</h2>
 
-<h3>Summary</h3>
-<p>The isLabelIndex method is a function that checks if a given value index exists in the labelIndex array. It returns true if the value is found and false otherwise.</p>
+<div class="container">
 
-<h3>Example Usage</h3>
-const display = new DisplayService();
-const labelIndex = [1, 2, 3, 4, 5];
-const index = 3;
-const result = display.isLabelIndex(labelIndex, index);
-console.log(result); // Output: true
+    <div class="banner">
+        <div class="row">
+            <div class="col">
+                <img class="banner-picture" src="../../src/images/space-rocket-1024.png" alt="Space Rocket" width="100" height="100">
+            </div>
+            <div class="col banner-title-col" >
+                <p><span class="banner-title" >Binary Search</span></p>
+            </div>
+        </div>
+    </div>
 
-<h3>Code Analysis</h3>
-<h4>Inputs</h4>
-labelIndex (array): An array of numbers representing the label indices.
-index (number): The value to search for in the labelIndex array.
+            <h1>Display Service</h1>
 
-<h4>Flow</h4>
-<ol>
-    <li>The isLabelIndex method takes in the labelIndex and index as parameters.</li>
-    <li>It uses the some method on the labelIndex array to iterate through each element.</li>
-    <li>Inside the some method, a callback function is executed for each element in the array.</li>
-    <li>The callback function checks if the current element is equal to index.</li>
-    <li>If a match is found, the some method returns true and stops further iteration.</li>
-    <li>If no match is found after iterating through all elements, the some method returns false.</li>
-</ol>
+            <h2>isLabelIndex(labelIndex, index)</h2>
 
-<h4>Outputs</h4>
-<ul>
-    <li>true if the index value is found in the labelIndex array.</li>
-    <li>false if the index value is not found in the labelIndex array.</li>
-</ul>
+            <h3>Summary</h3>
+            <p>The isLabelIndex method is a function that checks if a given value index exists in the labelIndex array. It returns true if the value is found and false otherwise.</p>
 
-<h2>findLabelIndex(labelIndex, index)</h2>
-<h3>Summary</h3>
-<p>The findLabelIndex method is a function that takes in an array labelIndex and a value index, and returns the index of the first
-    occurrence of index in the labelIndex array. If index is not found in the array, it returns -1.</p>
+            <h3>Example Usage</h3>
+            const display = new DisplayService();
+            const labelIndex = [1, 2, 3, 4, 5];
+            const index = 3;
+            const result = display.isLabelIndex(labelIndex, index);
+            console.log(result); // Output: true
 
-<h3>Example Usage</h3>
-const display = new DisplayService();
-const labelIndex = [1, 2, 3, 4, 5];
-const index = 3;
-const result = display.findLabelIndex(labelIndex, index);
-console.log(result); // Output: 2
+            <h3>Code Analysis</h3>
+            <h4>Inputs</h4>
+            labelIndex (array): An array of numbers representing the label indices.
+            index (number): The value to search for in the labelIndex array.
 
-<h3>Code Analysis</h3>
-<ul>
-    <li>labelIndex (array): An array of numbers representing the label indices.</li>
-    <li>index (number): The value to search for in the labelIndex array.</li>
+            <h4>Flow</h4>
+            <ol>
+                <li>The isLabelIndex method takes in the labelIndex and index as parameters.</li>
+                <li>It uses the some method on the labelIndex array to iterate through each element.</li>
+                <li>Inside the some method, a callback function is executed for each element in the array.</li>
+                <li>The callback function checks if the current element is equal to index.</li>
+                <li>If a match is found, the some method returns true and stops further iteration.</li>
+                <li>If no match is found after iterating through all elements, the some method returns false.</li>
+            </ol>
 
-</ul>
-<h3>Flow</h3>
-<ol>
-    <li>The findLabelIndex method takes in the labelIndex and index as parameters.</li>
-    <li>It uses the findIndex method on the labelIndex array to find the index of the first occurrence of index.</li>
-    <li>The findIndex method takes a callback function as an argument, which is executed for each element in the array until a match is found.</li>
-    <li>Inside the callback function, it checks if the current element is equal to index.</li>
-    <li>If a match is found, the index of the element is returned.</li>
-    <li>If no match is found, the findIndex method returns -1.</li>
-</ol>
+            <h4>Outputs</h4>
+            <ul>
+                <li>true if the index value is found in the labelIndex array.</li>
+                <li>false if the index value is not found in the labelIndex array.</li>
+            </ul>
 
-<h4>Outputs</h4>
-<ul>
-    <li>The index of the first occurrence of index in the labelIndex array.</li>
-    <li>If index is not found in the array, it returns -1.</li>
-</ul>
+            <h2>findLabelIndex(labelIndex, index)</h2>
+            <h3>Summary</h3>
+            <p>The findLabelIndex method is a function that takes in an array labelIndex and a value index, and returns the index of the first
+                occurrence of index in the labelIndex array. If index is not found in the array, it returns -1.</p>
+
+            <h3>Example Usage</h3>
+            const display = new DisplayService();
+            const labelIndex = [1, 2, 3, 4, 5];
+            const index = 3;
+            const result = display.findLabelIndex(labelIndex, index);
+            console.log(result); // Output: 2
+
+            <h3>Code Analysis</h3>
+            <ul>
+                <li>labelIndex (array): An array of numbers representing the label indices.</li>
+                <li>index (number): The value to search for in the labelIndex array.</li>
+
+            </ul>
+            <h3>Flow</h3>
+            <ol>
+                <li>The findLabelIndex method takes in the labelIndex and index as parameters.</li>
+                <li>It uses the findIndex method on the labelIndex array to find the index of the first occurrence of index.</li>
+                <li>The findIndex method takes a callback function as an argument, which is executed for each element in the array until a match is found.</li>
+                <li>Inside the callback function, it checks if the current element is equal to index.</li>
+                <li>If a match is found, the index of the element is returned.</li>
+                <li>If no match is found, the findIndex method returns -1.</li>
+            </ol>
+
+            <h4>Outputs</h4>
+            <ul>
+                <li>The index of the first occurrence of index in the labelIndex array.</li>
+                <li>If index is not found in the array, it returns -1.</li>
+            </ul>
+
+    <a class="footer-link" href="content.html">Documents</a>
+
+    </div>
 
 </body>
 </html>

@@ -1,7 +1,3 @@
-body{
-    background-color: ghostwhite;
-}
-
 .banner{
     margin-top: 20px;
     background-color: #b92184;
@@ -23,20 +19,6 @@ body{
 }
 
 h1{
-    color:#006600;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-h2{
-    color:#000088;
-    border-bottom: 3px solid #000088;
-    width: 100%;
-}
-
-.footer-link{
-    font-size: 20px;
     margin-top: 30px;
-    padding: 50px;
-    float:right;
+    color:darkblue;
 }
-
