@@ -1,0 +1,93 @@
+.title{
+    margin-top: 20px;
+    color:#c03;
+    border-bottom: 3px solid #c03;
+    width: 100%;
+    display: block;
+    font-size: 30px;
+}
+
+.coding-block{
+    background-color: lightgrey;
+    border: 2px solid black
+}
+
+.line-number{
+    color:blue;
+}
+
+.space-tab{
+    margin-left: 40px;
+}
+
+
+.comment{
+    color:green;
+}
+
+
+.method{
+    margin-top: 20px;
+    color:orange;
+    border-bottom: 3px solid orange;
+    width: 100%;
+    display: block;
+    font-size: 40px;
+}
+
+.divider{
+    border-bottom: 1px solid orange;
+    width: 100%;
+    display: block;
+}
+
+.section{
+    color:#c03;
+    font-size: 35px;
+}
+
+.subsection{
+    color:orangered;
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.paragraph{
+    color:blue;
+    font-size: 20px;
+}
+
+.array-group{
+    font-size: 20px;
+    color:orangered;
+}
+
+.array-index{
+    color:blueviolet;
+}
+
+.array-element{
+    color:green;
+}
+
+.array-label{
+    color:red;
+}
+
+.variable-name{
+    color:purple;
+}
+
+.variable-value{
+    color:red;
+}
+
+.variable-group{
+    font-size: 20px;
+    color:green;
+}
+
+.results{
+    color: red;
+    font-size: 30px;
+}
